@@ -1,13 +1,32 @@
 *{
     text-decoration: none;
     text-transform: none;
+   
 }
 button{
-    background-color: blueviolet;
+    padding: 5px;
+    background-color: rgb(200, 184, 214);
+    border: 2px solid rgb(187, 27, 27);
+    border-radius: 5px;
 }
 .divNome{
     background-color: darkgray;
+    padding: 30px;
+    margin: 30px;
 }
 #fale{
     color: blue;
+}
+#leticia{
+    margin-right: 10px;
+}
+
+.item{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 10px;
+   margin: 10px;
+   color: blueviolet;
+
 }
