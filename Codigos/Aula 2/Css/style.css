@@ -1,0 +1,13 @@
+*{
+    text-decoration: none;
+    text-transform: none;
+}
+button{
+    background-color: blueviolet;
+}
+.divNome{
+    background-color: darkgray;
+}
+#fale{
+    color: blue;
+}
