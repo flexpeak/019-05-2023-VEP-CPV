@@ -1,0 +1,58 @@
+header {
+    background-color: #be1111;
+}
+a{
+    font-size: 20px;
+}
+.corRoxa{
+    background-color: rgb(93, 25, 156);
+}
+
+.areaListas{
+    background-color: #a25151;
+    text-align:center;
+    color: antiquewhite;
+}
+.teste{
+    font-weight: 600;
+}
+.classeDiv{
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+    padding: 15px;
+    margin-left: 20px;
+    background-color: lightgray;
+}
+#idH1MeuSite{
+    color: rgb(13, 30, 131);
+    font-size: 40px;
+    text-align: center;
+
+}
+p{
+    text-align: justify;
+}
+.btnEnviar{
+    font-family: Helvetica, Arial, sans-serif;
+    border: 1px solid rgb(4, 4, 81);
+    border-radius: 3px;
+    background-color: rgb(4, 4, 81);
+    color: white;
+    padding: 5px 10px;
+    font-weight: 500;
+    box-shadow: 2px 2px rgb(111, 110, 110);
+}
+.btnEnviar:hover{
+    background-color: white;
+    color: rgb(4, 4, 81);;
+}
+.externo{
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    background-color: rgb(243, 238, 238);
+}
+body{
+    background-color: rgb(229, 219, 238);
+}

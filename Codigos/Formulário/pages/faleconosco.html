@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Fale Conosco</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg corRoxa">
+            <div class="container-fluid container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/images/logohorizontal-removido.png" width="130px" height="35px" alt="logo superBio">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container ">
+        <h1 class="text-center">Fale Conosco</h1>
+        <div class="externo m-2 p-2 ">
+
+            <form action="">
+                <h4>Dados Pessoais</h4>
+                <div class="row">
+                    <div class="form-floating mb-2 col-6">
+                        <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+                        <label for="floatingNome" class="ms-2">Nome</label>
+                    </div>
+                    <div class="form-floating col-6">
+                        <input type="text" class="form-control" id="floatingSobrenome" placeholder="Sobrenome">
+                        <label for="floatingSobrenome" class="ms-2">Sobrenome</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-floating mb-2 col-8">
+                        <input type="number" class="form-control" id="floatingCPF" placeholder="CPF">
+                        <label for="floatingCPF" class="ms-2">CPF</label>
+                    </div>
+                    <div class="form-floating col-4">
+                        <input type="number" class="form-control" id="floatingRG" placeholder="RG">
+                        <label for="floatingRG" class="ms-2">RG</label>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="form-check col-1">
+                        <label class="form-check-label">
+                            Gênero:
+                        </label>
+                    </div>
+                    <div class="form-check col-1">
+                        <input class="form-check-input" type="radio" name="genero" id="">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="form-check col-1">
+                        <input class="form-check-input" type="radio" name="genero" id="">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Feminino
+                        </label>
+                    </div>
+                    <div class="form-check col-1">
+                        <input class="form-check-input" type="radio" name="genero" id="">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Outros
+                        </label>
+                    </div>
+                    <div class="form-floating col-3">
+                        <input type="text" class="form-control" id="floatingOutros" placeholder="Outros" disabled>
+                        <label for="floatingOutros" class="ms-2">Outros</label>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="form-floating col-4">
+                        <input type="date" class="form-control" id="floatingNascimento" placeholder="Nascimento">
+                        <label for="floatingNascimento" class="ms-2">Data Nascimento</label>
+                    </div>
+
+                    <div class="form-floating col-4">
+                        <select class="form-select" id="floatingSelect" aria-label="">
+                            <option selected></option>
+                            <option value="BR">Brasil</option>
+                            <option value="AR">Argentina</option>
+                            <option value="VZ">Venezuela</option>
+                            <option value="IR">Iraque</option>
+                            <option value="UK">Ucrania</option>
+                        </select>
+                        <label for="floatingSelect" class="ms-2">Nacionalidade</label>
+                    </div>
+                    <div class="form-floating col-4">
+                        <select class="form-select" id="floatingSelect" aria-label="" disabled>
+                            <option selected></option>
+                            <option value="1">Amazonas</option>
+                            <option value="2">Pará</option>
+                            <option value="3">Amapá</option>
+                        </select>
+                        <label for="floatingSelect" class="ms-2">Naturalidade</label>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="d-flex align-items-start">
+                    <div class="form-check me-2">
+                        <label class="form-check-label">
+                            Gostos Musicais:
+                        </label>
+                    </div>
+                    <div class="form-check me-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Rock
+                        </label>
+                    </div>
+                    <div class="form-check me-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            MPB
+                        </label>
+                    </div>
+                    <div class="form-check me-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Sertanejo
+                        </label>
+                    </div>
+                    <div class="form-check me-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" disabled>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Funk
+                        </label>
+                    </div>
+
+                    <div class="form-check me-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Forró
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="row m-2">
+                    <button type="button" class="btn btn-outline-success me-2 col"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-send" viewBox="0 0 16 16">
+                            <path
+                                d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                        </svg> Enviar</button>
+                    <button type="reset" class="btn btn-outline-secondary me-2 col"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-trash" viewBox="0 0 16 16">
+                            <path
+                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path
+                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg> Limpar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="externo m-2 p-2 ">
+            <h4>Login</h4>
+            <div class="row">
+                <div class="form-floating mb-2 col-6">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="ms-2">Email</label>
+                </div>
+                <div class="form-floating col-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword" class="ms-2">Usuário</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-floating col-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword" class="ms-2">Senha</label>
+                </div>
+                <div class="form-floating col-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword" class="ms-2"> Repetir Senha</label>
+                </div>
+                <div class="  col-2">
+                    <button type="button" class="btn btn-outline-dark btn-lg mt-1"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-eye" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                            <path
+                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                        </svg> Ver</button>
+                </div>
+                <button type="button" class="btn btn-outline-success me-2 col-2"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path
+                            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                    </svg> Enviar</button>
+
+            </div>
+        </div>
+
+        <div class="externo m-2 p-2 ">
+            <h4>Endereço</h4>
+            <div class="row">
+                <div class="form-floating col-3">
+                    <input type="number" class="form-control" id="floatingCEP" placeholder="CEP">
+                    <label for="floatingCEP" class="ms-2">CEP</label>
+                </div>
+                <div class="  col">
+                    <button type="button" class="btn btn-outline-dark btn-lg mt-1"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> Pesquisar</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark btn-lg mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-type" viewBox="0 0 16 16">
+                        <path d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z"/>
+                      </svg> Digitar</button>
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-outline-success btn-lg m-2"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-send" viewBox="0 0 16 16">
+                            <path
+                                d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                        </svg> Enviar</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="form-floating mb-2 col-6">
+                    <input type="text" class="form-control" id="floatingRua" placeholder="Rua" disabled>
+                    <label for="floatingRua" class="ms-2">Rua</label>
+                </div>
+                <div class="form-floating col-2">
+                    <input type="text" class="form-control" id="floatingNumero" placeholder="Numero">
+                    <label for="floatingNumero" class="ms-2">Numero</label>
+                </div>
+
+                <div class="form-floating col-4">
+                    <input type="text" class="form-control" id="floatingComplemento" placeholder="Complemento" disabled>
+                    <label for="floatingComplemento" class="ms-2">Complemento</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-floating col-4">
+                    <input type="text" class="form-control" id="floatingBairro" placeholder="Bairro" disabled>
+                    <label for="floatingBairro" class="ms-2">Bairro</label>
+                </div>
+                <div class="form-floating mb-2 col-4">
+                    <input type="text" class="form-control" id="floatingCidade" placeholder="Cidade" disabled>
+                    <label for="floatingCidade" class="ms-2">Cidade</label>
+                </div>
+                <div class="form-floating col-4">
+                    <input type="text" class="form-control" id="floatingEstado" placeholder="Estado" disabled>
+                    <label for="floatingEstado" class="ms-2">Estado</label>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <script src="/js/faleconosco.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
