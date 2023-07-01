@@ -27,3 +27,24 @@ function digitar(){
     document.querySelector("#rua").disabled=false
     document.querySelector("#complemento").disabled= false
 }
+
+function pesquisarCEP(){
+    let cep = document.querySelector("#CEP").value
+    const complemento = document.querySelector("#complemento")
+
+    fetch("https://viacep.com.br/ws/"+cep+"/json/")
+    .then(response => response.json())
+    .then(response =>{
+        console.log(response)
+        document.querySelector("#rua").value = response.logradouro
+        if(response.complemento != null && response.complemento.length>0){
+            complemento = response.complemento
+        }else{
+            complemento.disabled = false
+        }
+        document.querySelector("#bairro").value = response.bairro
+        document.querySelector("#cidade").value = response.localidade
+        document.querySelector("#estado").value = response.uf
+       
+    })
+}

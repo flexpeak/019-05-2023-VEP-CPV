@@ -253,11 +253,11 @@
             <h4>Endereço</h4>
             <div class="row">
                 <div class="form-floating col-3">
-                    <input type="number" class="form-control" id="floatingCEP" placeholder="CEP" id="CEP">
+                    <input type="number" class="form-control" placeholder="CEP" id="CEP">
                     <label for="floatingCEP" class="ms-2">CEP</label>
                 </div>
                 <div class="  col">
-                    <button type="button" onclick="pesquisarCep()" class="btn btn-outline-dark btn-lg mt-1"><svg
+                    <button type="button" onclick="pesquisarCEP()" class="btn btn-outline-dark btn-lg mt-1"><svg
                             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-search" viewBox="0 0 16 16">
                             <path
@@ -297,15 +297,15 @@
             </div>
             <div class="row">
                 <div class="form-floating col-4">
-                    <input type="text" class="form-control" id="floatingBairro" placeholder="Bairro" disabled>
+                    <input type="text" class="form-control" for="floatingBairro" id="bairro" placeholder="Bairro" disabled>
                     <label for="floatingBairro" class="ms-2">Bairro</label>
                 </div>
                 <div class="form-floating mb-2 col-4">
-                    <input type="text" class="form-control" id="floatingCidade" placeholder="Cidade" disabled>
+                    <input type="text" class="form-control" for="floatingCidade" id="cidade" placeholder="Cidade" disabled>
                     <label for="floatingCidade" class="ms-2">Cidade</label>
                 </div>
                 <div class="form-floating col-4">
-                    <input type="text" class="form-control" id="floatingEstado" placeholder="Estado" disabled>
+                    <input type="text" class="form-control" for="floatingEstado" id="estado" placeholder="Estado" disabled>
                     <label for="floatingEstado" class="ms-2">Estado</label>
                 </div>
             </div>
@@ -319,7 +319,7 @@
 
     </main>
 
-    <script src="/js/faleconosco.js"></script>
+    <script src="../js/faleconosco.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
