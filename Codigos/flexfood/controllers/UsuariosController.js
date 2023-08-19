@@ -55,8 +55,19 @@ module.exports = class UsuariosController {
             })}
     }
     static validaToken (req, res, next){
-        let token = null
-        return token
-    }
+        const token = req.headers ['authorization']
+        jwt.verify (token, process.env.JWT_KEY , async (error, sucess)=>{
+            if (error){
+                res.status(401).json({
+                    error:'falha na autenticacao' })
+                }else{
+                    console.log('sucesso')
+                    next()
+                }
+            })
+        }
 }
+
+
+  
 
