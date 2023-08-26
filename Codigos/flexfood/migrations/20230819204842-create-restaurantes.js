@@ -19,7 +19,13 @@ module.exports = {
         type: Sequelize.CHAR(1)
       },
       usuario_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references:{
+          model:{
+            tableName: 'usuarios'
+          },
+          key: 'id'
+        }
       },
       createdAt: {
         allowNull: false,

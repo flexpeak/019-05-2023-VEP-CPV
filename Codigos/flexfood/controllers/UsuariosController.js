@@ -1,3 +1,6 @@
+// Tipo C = consumidor
+// Tipo A = administrador - dono do restaurante
+
 const { Usuarios } = require('../models')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
@@ -6,6 +9,7 @@ require('dotenv').config()
 module.exports = class UsuariosController {
     static async store(req, res) {
         try {
+            //console.log (req.body)
             const salt = await bcrypt.genSalt(12)
             const senha = await bcrypt.hash(req.body.senha, salt)
 
@@ -55,19 +59,17 @@ module.exports = class UsuariosController {
             })}
     }
     static validaToken (req, res, next){
-        const token = req.headers ['authorization']
+        const token = req.headers['authorization']
         jwt.verify (token, process.env.JWT_KEY , async (error, sucess)=>{
             if (error){
                 res.status(401).json({
-                    error:'falha na autenticacao' })
-                }else{
-                    console.log('sucesso')
-                    next()
-                }
-            })
-        }
+                    error:'Falha na autenticação'})
+            }else{
+                //console.log (sucess)
+                console.log('sucesso')
+                next()
+            }
+        })
+    }
 }
-
-
-  
 
