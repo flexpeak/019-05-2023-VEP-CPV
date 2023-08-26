@@ -1,7 +1,7 @@
 // Tipo C = consumidor
 // Tipo A = administrador - dono do restaurante
 
-const { Usuarios } = require('../models')
+const { usuarios } = require('../models')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
@@ -13,7 +13,7 @@ module.exports = class UsuariosController {
             const salt = await bcrypt.genSalt(12)
             const senha = await bcrypt.hash(req.body.senha, salt)
 
-            const usuario = await Usuarios.create({
+            const usuario = await usuarios.create({
                 nome: req.body.nome,
                 email: req.body.email,
                 status: 'A',
@@ -31,7 +31,7 @@ module.exports = class UsuariosController {
     }
     static async login(req, res) {
         try {
-            const usuario = await Usuarios.findOne({
+            const usuario = await usuarios.findOne({
                 where: {
                     email: req.body.email,
                     status: 'A'
@@ -66,7 +66,12 @@ module.exports = class UsuariosController {
                     error:'Falha na autenticação'})
             }else{
                 //console.log (sucess)
-                console.log('sucesso')
+                //console.log('sucesso')
+                const usuario = await usuarios.findByPk(sucess)
+                    req.usuarioTipo =  usuario.tipo
+                    req.usuario_id = sucess
+                
+                  
                 next()
             }
         })

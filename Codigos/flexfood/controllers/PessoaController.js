@@ -1,11 +1,11 @@
-const { Pessoas } = require('../models')
+const { pessoas } = require('../models')
 require('dotenv').config()
 
 module.exports = class PessoaController {
     static async show(req, res) {
         let pessoas = null
         try {
-             pessoas = await Pessoas.findAll()
+             pessoas = await pessoas.findAll()
             //res.send(pessoas)
         }
         catch (e) {
@@ -28,7 +28,7 @@ module.exports = class PessoaController {
     static async show1(req, res) {
         let pessoa = null
         try {
-             pessoa = await Pessoas.findByPk(req.params.id)
+             pessoa = await pessoas.findByPk(req.params.id)
             //res.send(pessoa)
         }
         catch (e) {
@@ -50,7 +50,7 @@ module.exports = class PessoaController {
     }
     static async create(req, res) {
         try {
-            const pessoa = await Pessoas.create({
+            const pessoa = await pessoas.create({
                 nome: req.body.nome,
                 email: req.body.email,
                 senha: req.body.senha,
@@ -67,7 +67,7 @@ module.exports = class PessoaController {
     }
     static async update(req, res) {
         try {
-            const pessoa = await Pessoas.findByPk(req.params.id)
+            const pessoa = await pessoas.findByPk(req.params.id)
             await pessoa.update({
                 nome: req.body.nome,
                 email: req.body.email,
@@ -85,7 +85,7 @@ module.exports = class PessoaController {
     }
     static async delete(req, res) {
         try {
-            const pessoa = await Pessoas.findByPk(req.params.id)
+            const pessoa = await pessoas.findByPk(req.params.id)
             await pessoa.destroy()
             res.send(true)
         }
