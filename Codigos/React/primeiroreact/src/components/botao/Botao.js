@@ -7,10 +7,10 @@ function Botao() {
         console.log (contador)
     } 
   return (
-    <div>
+    <>
       <button onClick={handleClick}>Clique em Mim</button>
       <p>O valor do contador é: {contador}</p>
-    </div>
+    </>
   )
 }
 
