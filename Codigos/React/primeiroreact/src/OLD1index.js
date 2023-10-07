@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { GlobalStateProvider } from './GlobalState';
-import App from './App';
-
+import FormularioGlobal from './components/formulario/FormularioGlobal';
+import FormularioCEP from './components/formulario/FormularioCEP';
 
 
 
@@ -11,7 +11,8 @@ root.render(
  
   <React.StrictMode>
   <GlobalStateProvider>
-      <App/>
+      <FormularioGlobal/>
+      <FormularioCEP/>
    </GlobalStateProvider>
    </React.StrictMode>
   
