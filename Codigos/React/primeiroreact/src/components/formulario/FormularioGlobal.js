@@ -1,4 +1,6 @@
-import React, {useGlobalState} from 'react'
+import React from 'react'
+import { useGlobalState } from '../../GlobalState' // erro a ser corrigido
+
 
 
 function FormularioGlobal() {

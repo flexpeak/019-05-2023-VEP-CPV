@@ -10,10 +10,9 @@ root.render(
  
   <React.StrictMode>
   <GlobalStateProvider>
-      <FormularioGlobal></FormularioGlobal>
+      <FormularioGlobal/>
    </GlobalStateProvider>
-   </React.StrictMode>,
-  document.getElementById('root')
+   </React.StrictMode>
   
 
 );

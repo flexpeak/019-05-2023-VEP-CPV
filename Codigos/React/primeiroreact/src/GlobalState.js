@@ -1,32 +1,33 @@
-import React , {createContext, useContext, useState} from 'react'
+import React, { createContext, useContext, useState } from 'react';
 
-const GlobalStateContext = createContext()
+const GlobalStateContext = createContext();
 
 export const useGlobalState = () => {
-    return useContext (GlobalStateContext)
-}
-export const GlobalStateProvider = ({children}) => {
-    const [nome, setNome] = useState ('')
-    const [email, setEmail] = useState ('')
+  return useContext(GlobalStateContext);
+};
 
-    const setGlobalNome = (value) =>{
-        setNome(value)
-    }
-    const setGlobalEmail = (value) =>{
-        setEmail(value)
-    }
+export const GlobalStateProvider = ({ children }) => {
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+
+  const setGlobalNome = (value) => {
+    setNome(value);
+  };
+
+  const setGlobalEmail = (value) => {
+    setEmail(value);
+  };
 
   return (
     <GlobalStateContext.Provider
-    value= {{
+      value={{
         nome,
         email,
-        
         setGlobalNome,
-        setGlobalEmail
-    }}>
+        setGlobalEmail,
+      }}
+    >
       {children}
     </GlobalStateContext.Provider>
-  )
-}
-
+  );
+};
